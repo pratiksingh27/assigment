@@ -1,0 +1,36 @@
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  width: 100%;
+  max-width: 900px;
+  margin: 30px auto;
+}
+
+.container{
+  width: 100%;
+}
+
+.flex{
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  column-gap: 1rem;
+}
+
+.gallery img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.add-image-btn:hover {
+  background-color: #0056b3;
+}
+
+.icon{
+  font-size: 1.5rem;
+}

@@ -1,0 +1,135 @@
+.App {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  /* 1 part empty, 2 parts for content */
+  height: 100vh;
+  background: linear-gradient(180deg, #373E44 -100%, #191B1F 100%);
+
+
+}
+
+.tabs-container,
+.gallery-container {
+  margin: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  background: #363C43;
+  color: white;
+  box-shadow: 5.67px 5.67px 3.78px 0px #00000066;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  column-gap: 10px;
+
+}
+
+.tabs-container .tabs {
+  display: flex;
+  justify-content: space-around;
+}
+
+.tabs-container .tabs button {
+  flex-grow: 1;
+  padding: 10px;
+  background: #171717;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.tabs-container .tabs-inner {
+  background: #171717;
+  border-radius: 15px;
+  padding: 5px;
+  width: 100%;
+}
+
+.tabs-container .tabs button.active {
+  background: #28292F;
+  border-radius: 15px;
+}
+
+.tab-content {
+  margin-top: 24px;
+}
+
+.tabs-text {
+  line-height: 25px;
+  font-size: 20px;
+  display: -webkit-box;
+  -webkit-line-clamp: 6;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  /* height: 60px;         */
+}
+
+.gallery-top {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.gallery-top span {
+  font-size: 20px;
+  background: #171717;
+  width: fit-content;
+  padding: 10px 20px;
+  border-radius: 100px;
+}
+
+.galler-right {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.gallery-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.gallery-container .gallery img {
+  /* width: 150px; */
+  height: 150px;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+.gallery-container .add-image-btn {
+  /* margin-top: 20px; */
+  padding: 10px 20px;
+  background: #48484A;
+  border: none;
+  color: white;
+  cursor: pointer;
+  border-radius: 100px;
+  text-align: center;
+  box-shadow: 9px 10px 7.1px 0px #000000, -0.5px -0.5px 6.9px 0px #ffffff;
+
+}
+
+@media (max-width: 768px) {
+  .App {
+    grid-template-columns: 1fr;
+  }
+}
+
+hr {
+  border: none;
+  height: 4px;
+  background: linear-gradient(180deg, rgba(40, 40, 40, 0.1) 0%, rgba(248, 248, 248, 0.1) 100%),
+    linear-gradient(0deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.05));
+
+  width: 70%;
+  margin: 20px auto;
+  border-radius: 2px;
+}
+
+.grid {
+  display: grid;
+}
